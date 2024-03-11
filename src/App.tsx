@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import JsonExplorer from './components/JsonExplorer';
+import data from './assets/data.json';
 
 function App() {
   return (
     <div className="App">
       <h1>JSON Explorer Challenge</h1>
-      <JsonExplorer />
+      <JsonExplorer json={data}/>
     </div>
   );
 }

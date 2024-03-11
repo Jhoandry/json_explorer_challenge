@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import Form from 'react-bootstrap/Form';
-import data from '../assets/data.json';
 import Card from 'react-bootstrap/Card';
 
 function buildKey(key:string, path:string, isParentArray:boolean) {
@@ -59,11 +58,12 @@ type Detail = {
   childrens: Detail[],
 };
 
-let jsonDetails: Detail[] = [];
+interface JsonExplorer {
+  json: any
+}
 
-function JsonExplorer () {
-  jsonDetails = getDetails(data);
-
+function JsonExplorer (props: JsonExplorer) {
+  const jsonDetails = getDetails(props.json);
   const [selected, setSelected] = useState({
     path: "",
     value: ""
