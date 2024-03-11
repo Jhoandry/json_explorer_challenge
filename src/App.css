@@ -5,16 +5,14 @@
 }
 
 h1   {
-  color: #4050FF;
-}
-
-.response {
-  margin-top: 2%;
-  padding: 10%;
-  border: 1px solid grey;
-  border-radius: 3%;
+  color: #4050FF !important;
 }
 
 li {
   list-style-type: none;
+}
+
+.header {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
