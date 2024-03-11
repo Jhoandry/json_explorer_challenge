@@ -3,3 +3,18 @@
   place-content: center;
   margin-top: 10%;
 }
+
+h1   {
+  color: #4050FF;
+}
+
+.response {
+  margin-top: 2%;
+  padding: 10%;
+  border: 1px solid grey;
+  border-radius: 3%;
+}
+
+li {
+  list-style-type: none;
+}
